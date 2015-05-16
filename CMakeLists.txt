@@ -2,6 +2,7 @@ cmake_minimum_required(VERSION 2.6)
 
 project(raymarch)
 add_subdirectory(glload)
+add_subdirectory(data)
 
 set (SOURCES
 	src/main.cpp
