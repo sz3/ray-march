@@ -24,7 +24,7 @@ int depthbits, int stencilbits, int fsaa, bool fullscreen)
 	glfwSetWindowTitle(title);
 
 	// Note that this function fails if no GL context has been made current
-	if(glload::LoadFunctions() == glload::LS_LOAD_FAILED)
+	if(!glload::LoadFunctions())
 		return false;
 	
 	std::cout						<<"Hello World!"<<std::endl<<"Running OpenGL ";

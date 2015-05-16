@@ -4,7 +4,7 @@ as compiling shaders and GLSL programs.
 */
 
 #include <glload/gl_3_1_comp.h> // OpenGL version 3.1, compatability profile
-#include <glload/gll.hpp>		// The C-style loading interface
+#include <glload/gl_load.hpp>		// The C-style loading interface
 #include <GL/glfw.h>			// Context
 #include <glm/glm.hpp>			// OpenGL mathematics
 #include <glm/gtc/type_ptr.hpp> // for value_ptr(matrix)
