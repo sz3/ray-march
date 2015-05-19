@@ -8,3 +8,5 @@
 bin
 ipch
 obj
+CMakeFiles/
+CMakeCache.txt
