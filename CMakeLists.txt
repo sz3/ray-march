@@ -14,12 +14,12 @@ set (SOURCES
 )
 
 include_directories(
-	${geeel_SOURCE_DIR}
-	${geeel_SOURCE_DIR}/glload/include
+	${raymarch_SOURCE_DIR}
+	${raymarch_SOURCE_DIR}/glload/include
 )
 
 link_directories(
-	${geeel_SOURCE_DIR}/glload
+	${raymarch_SOURCE_DIR}/glload
 )
 
 add_executable (
@@ -28,8 +28,11 @@ add_executable (
 )
 
 target_link_libraries(raymarch
+-Wl,--start-group
+	GL
 	glfw
 	
 	glload
+-Wl,--end-group
 )
 
